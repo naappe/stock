@@ -33,11 +33,9 @@ section{padding:76px 0;border-bottom:1px solid var(--line);scroll-margin-top:72p
 @media(max-width:650px){.wrap{width:min(var(--max),calc(100% - 26px))}.hero{padding:55px 0 42px}.story-grid,.stats,.rate,.people,.benefits,.principle{grid-template-columns:1fr}.story-card:last-child{grid-column:auto}.flow{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)}.barrow{grid-template-columns:104px 1fr 68px}.liquidity{grid-template-columns:1fr}.arr{transform:rotate(90deg);padding:8px}.phase{grid-template-columns:1fr;gap:4px}.gap{display:block}.gap strong{display:block;margin-bottom:6px}.dv .hero h1{font-size:38px}.dv .article p{font-size:19px}}
 @media print{header,.topbtn,.article-toggle{display:none}}
 .notice{max-width:850px;margin:22px 0 0;padding:12px 15px;border-left:3px solid var(--solution);background:rgba(255,255,255,.65);font-size:13px;color:#506065}.dv .notice{border-left:0;border-right:3px solid var(--solution);font-size:15px;line-height:1.9}.article hr{border:0;border-top:1px solid var(--line);margin:38px 0}
-/* Unicode Thaana fonts: Waheed for display headings; Faseyha for reading text. */
-@font-face{font-family:"MV_Waheed_Web";src:url("https://raw.githubusercontent.com/kudanai/Thaana-OSX/master/Library/Fonts/MV%20Waheed.otf") format("opentype");font-display:swap}
-@font-face{font-family:"MV_Faseyha_Web";src:url("https://raw.githubusercontent.com/kudanai/Thaana-OSX/master/Library/Fonts/MV%20Faseyha.otf") format("opentype");font-display:swap}
-body.dv{font-family:"MV_Faseyha_Web","MV Faseyha","MV Faseyha Unicode","Noto Sans Thaana",sans-serif}
-body.dv .hero h1,body.dv .title,body.dv .question,body.dv .step strong,body.dv .person h3,body.dv .article h1,body.dv .article h2,body.dv .article h3{font-family:"MV_Waheed_Web","MV Waheed","MVWaheed","MV_Faseyha_Web","MV Faseyha","Noto Sans Thaana",sans-serif}
+/* One Unicode Dhivehi font across the entire page. The version parameter forces browsers to load the current file. */
+@font-face{font-family:"StockDhivehi";src:url("https://raw.githubusercontent.com/kudanai/Thaana-OSX/master/Library/Fonts/MV%20Waheed.otf?v=20260831-2") format("opentype");font-display:swap}
+body.dv,body.dv *{font-family:"StockDhivehi","MV Waheed","MVWaheed","Noto Sans Thaana",sans-serif!important}
 </style>
 </head>
 <body>
